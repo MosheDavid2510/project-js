@@ -1,0 +1,36 @@
+.rectangle22 {
+    width: $base_width;
+    height: 70px;
+    justify-content: center;
+    margin-top: 0px;
+    margin-bottom: 2.1px;
+    box-shadow: $base_box_shadow;
+    display: flex;
+}
+
+.rectangle22-mobile {
+    display: none;
+}
+
+.rectangle22 img {
+    width: 70px;
+    height: 70px;
+}
+
+// תצוגת מובייל
+@media(max-width:768px) {
+    .rectangle22 {
+        display: none;
+    }
+
+    .rectangle22-mobile {
+        padding-top: 10px;
+        display: block;
+        box-shadow: $base_box_shadow;
+    }
+
+    .rectangle22-mobile img {
+        width: 45px;
+        height: 45px;
+    }
+}

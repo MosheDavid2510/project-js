@@ -1,0 +1,137 @@
+.rectangle17 {
+    width: $base_width;
+    background-color: $base_text_color;
+    display: flex;
+    justify-content: center;
+    height: 735px;
+}
+
+.rectangle17 img {
+    width: 539px;
+    height: 469.5px;
+    margin-right: 150px;
+}
+
+.rectangle17 .form-div {
+    margin-top: 110px;
+}
+
+form {
+    text-align: right;
+}
+
+.rectangle17 form .label-input {
+    display: flex;
+    flex-direction: column;
+}
+
+.rectangle17 form .label {
+    font-family: heebo-bold;
+    font-size: $font_size_16px;
+    text-align: right;
+    color: white;
+}
+
+.rectangle17 form .input {
+    width: 383.5px;
+    height: 35px;
+    border-bottom: 4px solid $base_bgc;
+    background-color: $base_white_bgc;
+    margin-bottom: 14px;
+}
+
+.rectangle17 form .text-area {
+    width: 383.5px;
+    height: 70px;
+    border-bottom: 4px solid $base_bgc;
+    background-color: $base_white_bgc;
+    margin-bottom: 25px;
+}
+
+.rectangle17 h4 {
+    font-family: heebo-black;
+    color: white;
+    font-size: $font_size_35px;
+    text-align: right;
+}
+
+.rectangle17 p {
+    font-family: heebo-regular;
+    font-size: $font_size_20px;
+    color: white;
+    text-align: right;
+    width: 400px;
+}
+
+.rectangle17 .contact-btn {
+    width: 116px;
+    height: 35px;
+    background-color: $base_bgc;
+    border-radius: 17.5px;
+    color: #2C2C2C;
+    font-family: heebo-bold;
+    font-size: $font_size_22px;
+    border: none;
+}
+
+.rectangle17 .contact-btn:hover {
+    box-shadow: 0px 3px 6px $base_white_bgc;
+}
+
+
+// תצוגת מובייל
+@media (max-width:768px) {
+    .rectangle17 {
+        flex-direction: column-reverse;
+        height: 654px;
+    }
+
+    .rectangle17 img {
+        width: 185px;
+        height: 160px;
+        margin-right: 170px;
+    }
+
+    .rectangle17 h4 {
+        font-size: 1.563rem;
+    }
+
+    .rectangle17 p {
+        font-size: 0.938rem;
+        width: 300px;
+    }
+
+    .rectangle17 .form-div {
+        margin: 0 auto;
+        margin-right: 7vw;
+    }
+
+    .rectangle55 {
+        height: 3180px;
+    }
+
+    form {
+        width: 90vw;
+    }
+
+    .rectangle17 form .label {
+        font-size: 0.75rem;
+    }
+
+    .rectangle17 form .input {
+        width: 310px;
+        height: 28px;
+    }
+
+    .rectangle17 form .text-area {
+        width: 310px;
+        height: 57px;
+    }
+
+    .rectangle17 .contact-btn {
+        width: 95px;
+        height: 28px;
+        font-size: 0.75rem;
+        margin-bottom: 50px;
+    }
+}

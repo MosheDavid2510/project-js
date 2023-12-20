@@ -1,0 +1,89 @@
+// תצוגת דסקטופ
+
+.rectangle56 {
+    width: $base_width;
+    height: 450px;
+}
+
+.rectangle56 img {
+    width: 98px;
+    height: 98px;
+    margin-top: 56px;
+    border-radius: 50%;
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
+}
+
+.rectangle56 img:hover {
+    transform: scale(1.3);
+}
+
+.rectangle56 h2 {
+    font-family: heebo-black;
+    font-size: $font_size_35px;
+    color: $base_text_color;
+}
+
+.rectangle56 p {
+    font-family: heebo-regular;
+    font-size: $font_size_20px;
+    line-height: 1.5;
+    color: $base_text_color;
+    display: block;
+}
+
+.rectangle56 button {
+    width: 182px;
+    height: 28px;
+    background-color: $base_bgc;
+    border-radius: 17.5px;
+    border: none;
+    margin-top: 49px;
+}
+
+button:hover {
+    box-shadow: 0px 0px 5px $base_text_color;
+}
+
+button a {
+    text-decoration: none;
+    color: $base_text_color;
+    font-family: heebo-bold;
+    font-size: $font_size_20px ;
+    letter-spacing: 0.3px;
+}
+
+
+// תצוגת מובייל
+@media(max-width:768px) {
+    .rectangle56 {
+        width: 100vw;
+        height: 600px;
+    }
+
+    .rectangle56 img {
+        width: 140px;
+        height: 140px;
+        margin: 50px 0px 20px 0px;
+    }
+
+    .rectangle56 h2 {
+        font-size: 1.563rem;
+
+    }
+
+    .rectangle56 p {
+        font-size: 0.938rem;
+        margin-bottom: 20px;
+        width: 300px;
+        margin: 0 auto;
+    }
+
+    .rectangle56 button {
+        width: 135px;
+    }
+
+    .rectangle56 button a {
+        font-size: 0.625rem;
+    }
+}

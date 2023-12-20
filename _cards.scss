@@ -1,0 +1,201 @@
+.rectangle55 {
+    width: 100vw;
+    height: 1090px;
+    background-color: #F6F6F6;
+}
+
+.rectangle55 h2 {
+    font-family: heebo-black;
+    font-size: $font_size_35px;
+    color: $base_text_color;
+    padding-top: 50px;
+}
+
+.rectangle55 p {
+    font-family: heebo-regular;
+    font-size: $font_size_20px;
+    line-height: 1.5;
+    color: $base_text_color;
+}
+
+.grid-container {
+    width: 920.5px;
+    display: grid;
+    grid-template-columns: 283.5px 283.5px 283.5px;
+    grid-template-rows: 362.5px 362.5px;
+    gap: 35px;
+    margin: 60px auto;
+
+    grid-template-areas:
+        "project1 project2 project3 "
+        "project4 project5 project6 "
+}
+
+.project {
+    width: 283.5px;
+    background-color: $base_white_bgc;
+    border-radius: 7px;
+    box-shadow: 3px 3px 15px #00000029;
+}
+
+.project img {
+    width: 283.5px;
+    height: 156px;
+    border-radius: 7px 7px 0 0;
+}
+
+.project1 {
+    grid-area: project1
+}
+
+.project2 {
+    grid-area: project2
+}
+
+.project2 .border {
+    border-bottom: 1px solid #d31c7445;
+}
+
+.project3 {
+    grid-area: project3
+}
+
+.project3 .border {
+    border-bottom: 1px solid $base_text_color;
+}
+
+.project4 {
+    grid-area: project4
+}
+
+.project4 .border {
+    border-bottom: 1px solid #D3E10E;
+}
+
+.project5 {
+    grid-area: project5
+}
+
+.project6 {
+    grid-area: project6
+}
+
+.grid-container button {
+    width: 107px;
+    height: 21px;
+    border-radius: 10.5px;
+    background-color: $base_bgc;
+    border: none;
+    margin-top: 21px;
+}
+
+.grid-container button a {
+    font-family: heebo-medium;
+    font-size: $font_size_14px;
+    color: #2C2C2C;
+    text-decoration: none;
+}
+
+.grid-container section h3 {
+    font-family: heebo-medium;
+    font-size: $font_size_22px;
+    color: $base_text_color;
+    margin-top: 20px;
+}
+
+.grid-container section p {
+    font-family: heebo-regular;
+    font-size: $font_size_16px;
+    color: $base_text_color;
+    margin-top: 14px;
+}
+
+.grid-container section .flex-rectangle34-icons {
+    width: 283.5px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    margin-top: 14px;
+
+}
+
+.grid-container section .flex-rectangle34-icons img {
+    width: 18.2px;
+    height: 18.2px;
+}
+
+.pre-page-buttons {
+    display: grid;
+    grid-template-columns: repeat(2, 107px);
+    grid-template-rows: repeat(1, 35px);
+    gap: 10.5px;
+    justify-content: center;
+}
+
+.pre-page-buttons button {
+    width: 107px;
+    height: 21px;
+    border-radius: 10.5px;
+    background-color: $base_bgc;
+    border: none;
+    margin-top: 21px;
+
+}
+
+.pre-page-buttons button a {
+    font-family: heebo-medium;
+    font-size: $font_size_14px;
+    color: #2C2C2C;
+    text-decoration: none;
+}
+
+// תצוגת מובייל 
+@media(max-width:768px) {
+    .pre-page-buttons {
+        width: 134px;
+        height: 26px;
+        margin: 0 auto;
+    }
+
+    .rectangle55 h2 {
+        font-size: 1.563rem;
+    }
+
+    .rectangle55 p {
+        font-size: 0.938rem;
+    }
+
+    .grid-container {
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+        gap: 30px;
+    }
+
+    .grid-container section h3 {
+        margin-top: 30px;
+    }
+
+    .project,
+    .project img {
+        width: 340px;
+        margin: 0 auto;
+    }
+
+    .project {
+        height: 430px;
+    }
+
+    .project img {
+        height: 190px;
+    }
+
+    .grid-container section .flex-rectangle34-icons {
+        width: 100px;
+        margin: 20px auto;
+    }
+
+    .grid-container button {
+        margin-top: 10px;
+    }
+}

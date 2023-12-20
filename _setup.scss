@@ -1,0 +1,62 @@
+ * {
+     padding: 0;
+     margin: 0;
+     box-sizing: border-box;
+ }
+
+ body {
+     direction: rtl;
+     text-align: center;
+     overflow-x: hidden;
+ }
+
+
+ @font-face {
+     font-family: heebo-regular;
+     src: url(font/heebo/Heebo-Regular.ttf);
+ }
+
+ @font-face {
+     font-family: heebo-medium;
+     src: url(font/heebo/Heebo-Medium.ttf);
+ }
+
+ @font-face {
+     font-family: heebo-bold;
+     src: url(font/heebo/Heebo-Bold.ttf);
+ }
+
+ @font-face {
+     font-family: heebo-black;
+     src: url(font/heebo/Heebo-Black.ttf);
+ }
+
+ @font-face {
+     font-family: heebo-light;
+     src: url(font/heebo/Heebo-Light.ttf);
+ }
+
+ @font-face {
+     font-family: dancingscript-regular;
+     src: url(font/dancing-script/static/DancingScript-Regular.ttf);
+ }
+
+
+ $base_width: 100vw;
+ $base_bgc: #1AE0EC;
+ $base_white_bgc: #ffffff;
+ $base_box_shadow: 0px 3px 6px #00000029;
+ $base_text_color: #3a3a3a;
+
+
+
+ //  כל המידות קטנות ב 30% לצורך תצוגה מיטבית
+ $font_size_12px: 0.525rem;
+ $font_size_14px: 0.6125rem;
+ $font_size_16px: 0.7rem;
+ $font_size_20px: 0.875rem;
+ $font_size_22px: 0.97rem;
+ $font_size_25px: 1.1rem;
+ $font_size_35px: 1.5rem;
+ $font_size_45px: 2rem;
+ $font_size_80px: 3.5rem;

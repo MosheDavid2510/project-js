@@ -1,0 +1,146 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    direction: rtl;
+    text-align: right;
+    color: #020253;
+    overflow: hidden;
+}
+
+@font-face {
+    font-family: heebo-regular;
+    src: url(heebo/Heebo-Regular.ttf);
+}
+
+@font-face {
+    font-family: heebo-black;
+    src: url(heebo/Heebo-Black.ttf);
+}
+
+@font-face {
+    font-family: heebo-bold;
+    src: url(heebo/Heebo-Bold.ttf);
+}
+
+.container {
+    display: grid;
+    grid-template-rows: 100vh;
+    grid-template-columns: 50vw 50vw;
+}
+
+img[src="Coffee.png"] {
+    width: 740px;
+    height: 730px;
+    display: block;
+}
+
+img[src="Coffee-mobile.png"] {
+    display: none;
+}
+
+.rectangleRight {
+    width: 292px;
+    height: 350px;
+    border: none;
+    margin: 150px auto;
+}
+
+.rectangleRight h1 {
+    font-family: heebo-black;
+    font-size: 1.88rem;
+    margin-bottom: 17.5px;
+}
+
+.rectangleRight p {
+    font-family: heebo-regular;
+    font-size: 0.875rem;
+    margin-bottom: 15.5px;
+}
+
+.label-input {
+    display: flex;
+    flex-direction: column;
+}
+
+.label-input label {
+    font-size: 0.7rem;
+    font-family: heebo-bold;
+}
+
+.label-input input {
+    width: 292px;
+    height: 35px;
+    background-color: #E5EEFF;
+    border: none;
+    border-bottom: 4px solid #020253;
+    margin-bottom: 28px;
+}
+
+input[type="submit"] {
+    width: 116px;
+    height: 35px;
+    background-color: #020253;
+    color: white;
+    font-family: heebo-bold;
+    font-size: 0.96rem;
+}
+
+input[type="submit"]:hover {
+    box-shadow: 0px 0px 5px #00000029;
+    cursor: pointer;
+}
+
+
+/* תצוגת מובייל */
+@media (max-width: 768px) {
+    .container {
+        display: grid;
+        grid-template-columns: 100vw;
+        grid-template-rows: 30vh 70vh;
+    }
+
+    img[src="Coffee-mobile.png"] {
+        display: block;
+        width: 100vw;
+    }
+
+    img[src="Coffee.png"] {
+        display: none;
+    }
+
+    .rectangleRight {
+        margin: 10vh auto;
+    }
+
+    .rectangleRight h1 {
+        font-size: 1.75rem;
+        margin-bottom: 17px;
+    }
+
+    .rectangleRight p {
+        font-size: 0.938rem;
+        margin-bottom: 20px;
+    }
+
+    .label-input label {
+        font-size: 0.875rem;
+    }
+
+    .label-input input {
+        width: 286px;
+        height: 34.2px;
+        border-bottom: 2.74px solid #020253;
+        margin-bottom: 20px;
+    }
+
+    input[type="submit"] {
+        width: 286px;
+        height: 34px;
+        font-size: 0.875rem;
+        margin-top: 10px;
+    }
+}

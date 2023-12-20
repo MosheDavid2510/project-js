@@ -1,0 +1,154 @@
+ * {
+     padding: 0;
+     margin: 0;
+     box-sizing: border-box;
+ }
+
+ body {
+     direction: rtl;
+     text-align: center;
+     color: white;
+     overflow: hidden;
+ }
+
+ @font-face {
+     font-family: satisfy-regular;
+     src: url(Satisfy/Satisfy-Regular.ttf);
+ }
+
+ @font-face {
+     font-family: varela-round;
+     src: url(varela-round/VarelaRound-Regular.ttf);
+ }
+
+ .rectangle39 {
+     width: 100vw;
+     height: 760px;
+     background: transparent linear-gradient(180deg, #281EFF 0%, #2DFF8C 100%) 0% 0% no-repeat padding-box;
+ }
+
+ .rectangle17 {
+     width: 850px;
+     height: 354px;
+     margin: 0px auto;
+     padding-top: 203px;
+ }
+
+ .rectangle17 h1 {
+     font-family: Satisfy-regular;
+     font-size: 7rem;
+     font-weight: normal;
+     margin-bottom: 7px;
+     text-shadow: 0px 0px 25px #00000087;
+ }
+
+ .rectangle17 h2 {
+     font-family: Varela-Round;
+     font-weight: normal;
+     font-size: 1.4rem;
+     margin-bottom: 21px;
+ }
+
+ .rectangle17 p {
+     font-family: Varela-Round;
+     font-weight: normal;
+     color: #F9F9F9;
+     font-size: 0.7rem;
+     margin-bottom: 24.5px;
+ }
+
+ form {
+     display: flex;
+     justify-content: space-evenly
+ }
+
+ form .label-input {
+     display: flex;
+     flex-direction: column;
+ }
+
+ form label {
+     text-align: right;
+     margin-bottom: 3px;
+     font-family: varela-round;
+     font-weight: normal;
+     font-size: 0.7rem;
+ }
+
+ form input {
+     width: 292.5px;
+     height: 35px;
+     background-color: #F6F6F624;
+     border: 2px solid #FFFFFF;
+ }
+
+ input[type="submit"] {
+     width: 144px;
+     height: 35px;
+     color: #1C1C1C;
+     background-color: #fff;
+     margin-top: 14px;
+     font-family: varela-round;
+     font-weight: normal;
+     font-size: 0.7rem;
+ }
+
+ input[type="submit"]:hover {
+     box-shadow: 0px 0px 5px #00000029;
+     cursor: pointer;
+ }
+
+
+ /*תצוגת מובייל*/
+ @media (max-width: 768px) {
+     .rectangle39 {
+         width: 100vw;
+         height: 100vh;
+     }
+
+     .rectangle17 {
+         margin: 0;
+         padding: 0;
+         width: 86vw;
+         height: 506px;
+         padding-top: 20vh;
+         padding-right: 10vw;
+     }
+
+
+     .rectangle17 h1 {
+         font-size: 3.75rem;
+     }
+
+     .rectangle17 h2 {
+         font-size: 1.125rem;
+     }
+
+     .rectangle17 p {
+         font-size: 1rem;
+     }
+
+
+     form {
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+     }
+
+     form label {
+         font-size: 0.688rem;
+     }
+
+     form input {
+         width: 300px;
+         height: 36px;
+         border: 1px solid #FFFFFF;
+         margin-bottom: 20px;
+     }
+
+     input[type="submit"] {
+         width: 300px;
+         height: 33px;
+         font-size: 0.688rem;
+     }
+ }

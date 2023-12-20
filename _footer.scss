@@ -1,0 +1,67 @@
+/* rectangle 6*/
+
+footer {
+    background-color: $base_bgc;
+    width: $base_width;
+    height: 140px;
+    display: grid;
+    grid-template-columns: repeat(6, 70px);
+    grid-template-rows: 42px;
+    gap: 84px;
+    justify-content: center;
+    padding-top: 45.5px;
+}
+
+figure {
+    width: 81px;
+}
+
+figcaption {
+    width: 81px;
+    font-size: $font_size_14px;
+    text-align: center;
+    padding-top: 7px;
+}
+
+.rectangle43 {
+    width: $base_width;
+    height: 35px;
+    background-color: #000000;
+    border-bottom: 5px solid $base_bgc;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+.rectangle43 p {
+    font-size: $font_size_20px;
+    font-family: heebo-light;
+    margin: 0px 35px 0px 35px;
+    padding-top: 7px;
+    color: $base_bgc;
+}
+
+// תצוגת מובייל
+@media(max-width:768px) {
+    .rectangle43 {
+        width: 100vw;
+        height: 29px;
+    }
+
+    .rectangle43 p {
+        margin: 0px 10px 0px 10px;
+        padding-top: 3px;
+    }
+
+    footer {
+        width: 100vw;
+        height: 415px;
+        display: grid;
+        grid-template-columns: repeat(2, 100px);
+        grid-template-rows: repeat(2, 50px);
+        gap: 70px;
+        justify-content: center;
+        padding-top: 50px;
+    }
+}

@@ -1,0 +1,183 @@
+ * {
+     padding: 0;
+     margin: 0;
+     box-sizing: border-box;
+ }
+
+ body {
+     direction: rtl;
+     background-color: #fff;
+     overflow-x: hidden;
+ }
+
+ @font-face {
+     font-family: heebo-black;
+     src: url(heebo/Heebo-Black.ttf);
+ }
+
+ @font-face {
+     font-family: heebo-regular;
+     src: url(heebo/Heebo-Regular.ttf);
+ }
+
+ @font-face {
+     font-family: heebo-bold;
+     src: url(heebo/Heebo-Bold.ttf);
+ }
+
+ .container {
+     width: 100vw;
+     height: 630px;
+     background-color: #fff;
+ }
+
+ img[src="Path 15-1.png"] {
+     width: 100vw;
+     height: 413px;
+     position: relative;
+     top: 0;
+     left: 0;
+     background-repeat: no-repeat;
+     background-position: top left;
+     background-size: cover;
+     background-attachment: fixed;
+     display: block;
+ }
+
+ img[src="Path 15-mobile.png"] {
+     display: none;
+ }
+
+ div.form {
+     width: 400px;
+     height: 450px;
+     background-color: #1A1A1AD4;
+     position: absolute;
+     top: 110px;
+     right: 206px;
+ }
+
+ h3,
+ p {
+     text-align: center;
+ }
+
+ h3 {
+     font-family: heebo-black;
+     color: white;
+     font-size: 1.575rem;
+     margin-top: 52.5px;
+ }
+
+ h3.mobile-br {
+     display: none;
+ }
+
+ p {
+     font-family: heebo-regular;
+     font-size: 0.875rem;
+     color: white;
+     margin-top: 14px;
+ }
+
+ form {
+     width: 290px;
+     margin: 30px auto;
+ }
+
+ form .label-input {
+     display: flex;
+     flex-direction: column;
+ }
+
+ form label {
+     font-family: heebo-bold;
+     font-size: 0.7rem;
+     text-align: right;
+     color: white;
+ }
+
+ form input {
+     width: 292px;
+     height: 35px;
+     border: 1px solid #D31C75;
+     background-color: #fff;
+     margin-bottom: 14px;
+ }
+
+ input[type="submit"] {
+     width: 116px;
+     height: 35px;
+     background-color: #D31C75;
+     color: white;
+     font-family: heebo-bold;
+     font-size: 0.96rem;
+     margin-top: 9.8px;
+     border: 1px solid #D31C75;
+ }
+
+ input[type="submit"]:hover {
+     box-shadow: 0px 0px 5px white;
+ }
+
+ /*תצוגת מובייל*/
+ @media (max-width: 768px) {
+
+     img[src="Path 15-mobile.png"] {
+         width: 100vw;
+         height: 30vh;
+         position: relative;
+         top: 0px;
+         left: 0;
+         display: block;
+     }
+
+     img[src="Path 15-1.png"] {
+         display: none;
+     }
+
+     div.form {
+         width: 300px;
+         height: 441px;
+         position: absolute;
+         top: 90px;
+         right: 10vw;
+     }
+
+     h3 {
+         display: none;
+     }
+
+     h3.mobile-br {
+         font-size: 1.563rem;
+         margin-top: 40px;
+         display: block;
+     }
+
+     p {
+         font-size: 0.938rem;
+         margin-top: 20px;
+         display: block;
+         width: 270px;
+         margin: 20px auto;
+     }
+
+     form {
+         width: 230px;
+     }
+
+     form label {
+         font-size: 0.875rem;
+     }
+
+     form input {
+         width: 230px;
+         height: 27px;
+     }
+
+     input[type="submit"] {
+         width: 76px;
+         height: 33px;
+         font-size: 0.938rem;
+     }
+ }

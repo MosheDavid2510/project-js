@@ -1,0 +1,71 @@
+nav {
+    width: $base_width;
+    background-color: $base_white_bgc;
+    height: 56px;
+    border-top: 3px solid #13E8F163;
+
+
+    .hamburger {
+        display: none;
+    }
+
+    ul {
+        list-style-type: none;
+        display: flex;
+        width: 420px;
+        justify-content: space-between;
+        margin-right: 189px;
+
+        li {
+            text-align: center;
+            padding-top: 15px;
+
+            a {
+                text-decoration: none;
+                font-family: heebo-regular;
+                font-size: $font_size_25px ;
+                color: #2C2C2C;
+
+                &:hover {
+                    color: $base_bgc;
+                }
+            }
+        }
+    }
+}
+
+// תצוגת מובייל
+@media (max-width:768px) {
+    nav {
+        height: 80px;
+
+        .hamburger {
+            font-size: 40px;
+            display: block;
+            position: fixed;
+            top: 10px;
+            right: 20px;
+            color: $base_bgc;
+        }
+
+        .hamburger:hover+ul {
+            display: block;
+        }
+
+        ul {
+            display: none;
+            flex-direction: column;
+            margin: 80px 0px 0px 0px;
+
+            li {
+                background-color: #fff;
+                text-align: right;
+                padding-right: 20px;
+
+                a {
+                    line-height: 2;
+                }
+            }
+        }
+    }
+}

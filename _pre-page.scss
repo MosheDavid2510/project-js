@@ -1,0 +1,57 @@
+.rectangle22-pre-page {
+    width: $base_width;
+    height: 70px;
+    display: grid;
+    grid-template-columns: repeat(4, 70px);
+    grid-template-rows: repeat(1, 70px);
+    gap: 14px;
+    justify-content: center;
+    box-shadow: $base_box_shadow;
+    margin-bottom: 2.1px;
+    background-color: $base_white_bgc;
+}
+
+.rectangle22-pre-page img {
+    width: 70px;
+    height: 70px;
+}
+
+.rectangle56-pre-page {
+    width: $base_width;
+    height: 710px;
+    background-color: #EBFEFF;
+    padding: 78.5px;
+}
+
+.rectangle56-pre-page .pre-page-img {
+    width: 832px;
+    height: 502px;
+    box-shadow: 0px 0px 40px #00000066;
+}
+
+// תצוגת מובייל
+@media(max-width:768px) {
+    .rectangle22-pre-page {
+        width: 100vw;
+        height: 61px;
+        gap: 10px;
+    }
+
+    .rectangle22-pre-page img {
+        width: 46px;
+        height: 46px;
+        margin-top: 10px;
+    }
+
+    .rectangle56-pre-page {
+        width: 100vw;
+        height: 45vh;
+        padding: 0;
+    }
+
+    .rectangle56-pre-page .pre-page-img {
+        width: 295px;
+        height: 178px;
+        margin: 10vh auto;
+    }
+}

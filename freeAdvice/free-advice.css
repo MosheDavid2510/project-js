@@ -1,0 +1,264 @@
+ * {
+     padding: 0;
+     margin: 0;
+     box-sizing: border-box;
+ }
+
+ body {
+     direction: rtl;
+     overflow: hidden;
+ }
+
+ @font-face {
+     font-family: heebo-black;
+     src: url(font/Heebo-Black.ttf);
+ }
+
+ @font-face {
+     font-family: heebo-regular;
+     src: url(font/Heebo-Regular.ttf);
+ }
+
+ @font-face {
+     font-family: heebo-bold;
+     src: url(font/Heebo-Bold.ttf);
+ }
+
+ .rectangle523 {
+     background-color: #FDBD03;
+     width: 303px;
+     height: 12px;
+     position: fixed;
+     top: 0;
+     right: 0;
+ }
+
+ .container {
+     display: flex;
+     width: 1117px;
+     justify-content: space-between;
+     margin-right: 166px;
+ }
+
+ .container img {
+     width: 375px;
+     height: 563px;
+     margin-top: 97px;
+ }
+
+ .container h1 {
+     font-family: heebo-black;
+     font-size: 46px;
+     color: #FDBD03;
+     margin-top: 158px;
+     margin-bottom: 10px;
+ }
+
+ .container p {
+     font-family: heebo-regular;
+     font-size: 14px;
+     color: #020253;
+     margin-bottom: 28px;
+ }
+
+ .label-input {
+     display: flex;
+     flex-direction: column;
+
+ }
+
+ .label-input label {
+     font-family: heebo-bold;
+     font-size: 11.2px;
+     color: #2C2C2C;
+     margin-bottom: 5px;
+ }
+
+ .label-input input {
+     width: 290px;
+     height: 35px;
+     margin-bottom: 21px;
+ }
+
+ .label-input .text-area {
+     width: 600px;
+     height: 100px;
+     margin-bottom: 40px;
+ }
+
+ .label-input input,
+ .label-input .text-area {
+     background-color: #E5EEFF;
+     border: none;
+     border-bottom: 4px solid #FDBD03;
+ }
+
+ .container-name-mail {
+     display: flex;
+     width: 600px;
+     justify-content: space-between;
+ }
+
+ input[type="submit"] {
+     width: 116px;
+     height: 35px;
+     background-color: #FDBD03;
+     color: #000000;
+     font-family: heebo-bold;
+     font-size: 15.5px;
+     border: none;
+ }
+
+ input[type="submit"]:hover {
+     box-shadow: 0px 0px 5px #00000029;
+     cursor: pointer;
+ }
+
+ .circle {
+     width: 66px;
+     height: 66px;
+     background-color: #FDBD03;
+     border-radius: 50%;
+ }
+
+ .whatsapp-circle {
+     position: fixed;
+     top: 63px;
+     left: 65px;
+     display: block;
+ }
+
+ .circle img {
+     width: 37.8px;
+     height: 37.8px;
+     position: absolute;
+     top: 0;
+     right: 0;
+     bottom: 0;
+     left: 0;
+     margin: auto;
+ }
+
+ .icon-container {
+     display: flex;
+     justify-content: space-evenly;
+     width: 420px;
+     position: fixed;
+     bottom: 55px;
+     left: 55px;
+ }
+
+ .icon-container .circle img {
+     width: 28px;
+     height: 28px;
+     position: relative;
+     top: 20px;
+     right: 20px;
+     bottom: 0;
+     left: 0;
+     margin: auto;
+ }
+
+ .rectangle519 {
+     background-color: #FDBD03;
+     width: 726px;
+     height: 12px;
+     position: fixed;
+     bottom: 0;
+     left: 0;
+ }
+
+ /* תצוגת מובייל */
+ @media (max-width: 768px) {
+     body {
+         width: 100vw;
+         height: 800px;
+         overflow: hidden;
+     }
+
+     .rectangle523 {
+         width: 320px;
+         height: 10px;
+     }
+
+     .container {
+         display: flex;
+         flex-direction: column;
+         width: 100vw;
+         margin: 0 auto;
+         align-items: center;
+     }
+
+     .container img {
+         width: 79px;
+         height: 119px;
+         margin: 30px auto;
+     }
+
+     .container h1 {
+         font-size: 2.5rem;
+         margin-top: 0px;
+     }
+
+     .container p {
+         font-size: 0.938rem;
+     }
+
+     .label-input label {
+         font-size: 0.625rem;
+     }
+
+     .label-input input {
+         width: 310px;
+         height: 37px;
+     }
+
+     .label-input .text-area {
+         width: 310px;
+         height: 105px;
+     }
+
+     .container-name-mail {
+         display: flex;
+         flex-direction: column;
+         width: 310px;
+     }
+
+     input[type="submit"] {
+         width: 310px;
+         height: 37px;
+     }
+
+     .circle {
+         width: 46px;
+         height: 46px;
+     }
+
+     .circle img {
+         display: none;
+     }
+
+     .whatsapp-circle {
+         display: none;
+     }
+
+     .icon-container {
+         width: 300px;
+         align-items: center;
+         margin-bottom: -20px;
+     }
+
+     .icon-container .circle img {
+         display: block;
+         position: relative;
+         top: 13px;
+         right: 0px;
+         width: 20px;
+         height: 20px;
+     }
+
+     .rectangle519 {
+         width: 100vw;
+         height: 10px;
+     }
+ }

@@ -1,0 +1,94 @@
+// תצוגת דסקטופ 
+header {
+    width: $base_width;
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+}
+
+.logo {
+    display: flex;
+    position: absolute;
+    left: 210px;
+    top: 7px
+}
+
+.logo .profile-image {
+    width: 43px;
+    height: 43px;
+    margin-right: 14px;
+    border-radius: 50%;
+}
+
+.logo h4 {
+    font-family: dancingscript-regular;
+    font-size: $font_size_25px;
+    margin-top: 14px;
+    display: block;
+}
+
+.logo h4 a {
+    text-decoration: none;
+    color: $base_text_color;
+}
+
+.path1 {
+    width: $base_width;
+    height: 364px;
+    background-color: #13E8F163;
+}
+
+.path1 img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: $base_width;
+    height: 364px;
+    opacity: 0.8;
+    z-index: -1;
+}
+
+.path1 h1 {
+    font-family: heebo-black;
+    font-size: $font_size_80px;
+    padding-top: 126px;
+    color: $base_text_color;
+}
+
+.path1 p {
+    font-family: heebo-medium;
+    font-size: $font_size_20px ;
+    color: $base_text_color;
+    line-height: 1.5;
+    width: 450px;
+    margin: 10px auto;
+}
+
+// תצוגת מובייל
+@media (max-width:768px) {
+    .logo h4 {
+        display: none;
+    }
+
+    .logo {
+        position: fixed;
+        top: 18px;
+        left: 18px;
+    }
+
+    .path1,
+    .path1 img {
+        width: 100vw;
+        height: 370px;
+    }
+
+    .path1 h1 {
+        font-size: 2.875rem;
+    }
+
+    .path1 p {
+        width: 320px;
+        margin: 0 auto;
+    }
+
+}

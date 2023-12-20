@@ -1,0 +1,140 @@
+ * {
+     padding: 0;
+     margin: 0;
+     box-sizing: border-box;
+ }
+
+ body {
+     direction: rtl;
+     overflow: hidden;
+ }
+
+ @font-face {
+     font-family: assistant-bold;
+     src: url(font/Assistant-Bold.ttf);
+ }
+
+ @font-face {
+     font-family: assistant-regular;
+     src: url(font/Assistant-Regular.ttf);
+ }
+
+ img {
+     width: 100vw;
+     height: 518px;
+ }
+
+ .rectangle17 {
+     width: 607px;
+     height: 520px;
+     position: absolute;
+     top: 162.5px;
+     text-align: center;
+     width: 100vw;
+ }
+
+ .rectangle17 h1 {
+     font-family: assistant-bold;
+     font-size: 3.76rem;
+     color: #D3E10E;
+     margin-bottom: 16px;
+ }
+
+ .rectangle17 p {
+     font-family: assistant-regular;
+     font-size: 0.875rem;
+     color: #F9F9F9;
+ }
+
+ .label-input {
+     display: flex;
+     flex-direction: column;
+ }
+
+ .label-input label {
+     font-size: 0.7rem;
+     font-family: assistant-bold;
+ }
+
+ .label-input input {
+     width: 292px;
+     height: 35px;
+     background-color: #F6F6F6;
+     border: none;
+     border-bottom: 3px solid #D3E10E;
+     z-index: 1;
+ }
+
+ form {
+     display: flex;
+     justify-content: space-evenly;
+     margin: 35px auto;
+     width: 840px;
+ }
+
+ input[type="submit"] {
+     width: 116px;
+     height: 35px;
+     background-color: #D3E10E;
+     color: #011560;
+     font-family: assistant-bold;
+     font-size: 0.96rem;
+     margin-top: 15px;
+     border: none;
+     z-index: 1;
+ }
+
+ input[type="submit"]:hover {
+     box-shadow: 0px 0px 5px #00000029;
+     cursor: pointer;
+ }
+
+ /*תצוגת מובייל*/
+ @media (max-width: 768px) {
+
+     img {
+         width: 100vw;
+         height: 300px;
+     }
+
+     .rectangle17 {
+         width: 100vw;
+         position: fixed;
+         top: 80px;
+     }
+
+     .rectangle17 h1 {
+         font-size: 1.75rem;
+     }
+
+     .rectangle17 p {
+         font-size: 0.938rem;
+         width: 320px;
+         margin: 0 auto;
+     }
+
+     form {
+         display: flex;
+         flex-direction: column;
+         width: 285px;
+         margin-top: 80px;
+     }
+
+     .label-input label {
+         font-size: 0.625rem;
+         margin-bottom: 5px;
+     }
+
+     .label-input input {
+         width: 285px;
+         height: 34px;
+         margin-bottom: 10px;
+     }
+
+     input[type="submit"] {
+         width: 285px;
+         height: 34px;
+         font-size: 0.875rem;
+         margin-bottom: 50px;
+     }
+ }
